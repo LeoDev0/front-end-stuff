@@ -1,0 +1,113 @@
+/* Block */
+.block {
+    background-color: #ffffff;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Element */
+.block__item {
+    padding: 5px;
+    text-decoration: underline;
+}
+
+/* Modifiers */
+.block--color-red {
+    color: red;
+}
+
+.block--color-aquamarine {
+    color: aquamarine;
+}
+
+.block--big {
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* ------------------------------------------ */
+
+/* Block */
+.button {
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Modifiers */
+.button--aquamarine {
+    background-color: aquamarine;
+}
+
+.button--aquamarine:hover {
+    background-color: rgb(176, 255, 229);
+}
+
+.button--dark-blue {
+    background-color: blue;
+    color: #ffffff;
+}
+
+.button--dark-blue:hover {
+    background-color: rgb(82, 82, 255);
+}
+
+/* ------------------------------------------ */
+
+/* Block */
+.form {
+    background-color: #eeeeee;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 300px;
+    margin: 25px auto;
+}
+
+/* Elements */
+.form__input {
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 15px;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form__submit {
+    border: 1px solid #cccccc;
+    background-color: #999999;
+    padding: 10px;
+    font-size: 15px;
+    width: 100%;
+    display: block;
+}
+
+/* Modifiers */
+.form__submit--green {
+    background-color: #00ff00;
+    color: #ffffff;
+}
+
+.form--small {
+    padding: 5px;
+}
+
+/* modifiers com efeito cascata sobre os elementos nos padrões BEM */
+.form--small .form__input {
+    padding: 5px;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.form--small .form__submit {
+    padding: 5px;
+    font-size: 13px;
+}

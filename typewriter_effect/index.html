@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeWriter</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        h1::after {
+            content: '|';
+            animation: blink infinite 1s;
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+
+    <h1>Efeito de digitação typewriter</h1>
+    
+    <script>
+        const text = document.querySelector('h1')
+
+        function typeWriter(text) {
+            const textArray = text.innerHTML.split('')
+            text.innerHTML = ''
+
+            textArray.forEach((letter, i) => {
+                setTimeout(() => {
+                    text.innerHTML += letter
+                }, i * 75);
+            });
+        }
+
+        typeWriter(text)
+    </script>
+</body>
+</html>

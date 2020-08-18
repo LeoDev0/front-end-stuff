@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Input Animation</title>
+</head>
+
+<body>
+  <h1>Input Animation</h1>
+
+  <div class="form">
+    <input type="text" name="name" placeholder=" " />
+    <!-- this above placeholder with just a space is necessary to trigger the input animation :not(:placeholder-shown) -->
+    <label for="name" class="label-name">
+      <span class="content-name">Name</span>
+    </label>
+  </div>
+
+  <div class="form">
+    <input type="text" name="email" placeholder=" " />
+    <label for="email" class="label-name">
+      <span class="content-name">Email</span>
+    </label>
+  </div>
+</body>
+
+</html>
